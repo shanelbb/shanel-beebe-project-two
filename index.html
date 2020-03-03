@@ -12,60 +12,45 @@
       src="https://kit.fontawesome.com/35da8f1ae7.js"
       crossorigin="anonymous"
     ></script>
+
+    <link type="image/png" href="./assets/favicon-32x32.png" rel="icon">
+
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Delicious</title>
   </head>
   <body>
-    <header>
-      <h1>Delicious</h1>
+    <header class="header-home">
+      <h1 class="header-logo">Delicious</h1>
 
-      <!-- Mobile hamburger menu starts here -->
-      <div class="nav-mobile">
-        <label for="toggle" class="toggle"><i class="fas fa-bars"></i></label>
-        <input type="checkbox" id="toggle" class="toggle" />
-        <ul class="nav-mobile-list">
-          <li><a href="#" class="nav-mobile-item">Home</a></li>
-          <li><a href="#" class="nav-mobile-item">About</a></li>
-          <li><a href="#" class="nav-mobile-item">Recipes</a></li>
-          <li><a href="#" class="nav-mobile-item">Nutrition</a></li>
-          <li><a href="#" class="nav-mobile-item">Blog</a></li>
-          <li><a href="#" class="nav-mobile-item">Shop</a></li>
-          <li><a href="#" class="nav-mobile-item">Contact</a></li>
+      <!-- navigation menu starts here -->
+      <div class="nav-header">
+        <div class="nav-menu-icon">
+          <label for="toggle" class="toggle"><i class="fas fa-bars"></i></label>
+          <input type="checkbox" id="toggle" class="toggle" />
+        </div>
+        
+          <ul class="nav-header-list">
+          <li><a href="#" class="nav-header-item">Home</a></li>
+          <li><a href="#" class="nav-header-item">About</a></li>
+          <li><a href="#" class="nav-header-item">Recipes</a></li>
+          <li><a href="#" class="nav-header-item">Nutrition</a></li>
+          <li><a href="#" class="nav-header-item">Blog</a></li>
+          <li><a href="#" class="nav-header-item">Shop</a></li>
+          <li><a href="#" class="nav-header-item">Contact</a></li>
           <li>
-            <a href="#" class="nav-mobile-item nav-mobile-item-icon">
+            <a href="#" class="nav-header-item nav-header-item-icon">
               <i class="fas fa-shopping-bag"></i>
             </a>
           </li>
           <li>
-            <a href="#" class="nav-mobile-item nav-mobile-item-icon">
+            <a href="#" class="nav-header-item nav-header-item-icon">
               <i class="fas fa-search"></i>
             </a>
           </li>
         </ul>
       </div>
-      <!-- Mobile hamburger menu ends here -->
+      <!-- navigation menu ends here -->
 
-      <nav class="nav-desktop">
-        <ul class="nav-desktop-list">
-          <li><a href="#" class="nav-desktop-item">Home</a></li>
-          <li><a href="#" class="nav-desktop-item">About</a></li>
-          <li><a href="#" class="nav-desktop-item">Recipes</a></li>
-          <li><a href="#" class="nav-desktop-item">Nutrition</a></li>
-          <li><a href="#" class="nav-desktop-item">Blog</a></li>
-          <li><a href="#" class="nav-desktop-item">Shop</a></li>
-          <li><a href="#" class="nav-desktop-item">Contact</a></li>
-          <li>
-            <a href="#" class="nav-desktop-item nav-desktop-item-icon"
-              ><i class="fas fa-shopping-bag"></i
-            ></a>
-          </li>
-          <li>
-            <a href="#" class="nav-desktop-item nav-desktop-item-icon">
-              <i class="fas fa-search"></i>
-            </a>
-          </li>
-        </ul>
-      </nav>
     </header>
     <main>
       <section class="grid">
@@ -88,53 +73,71 @@
         <div class="grid-bottom">
           <article>
             <ul class="grid-list">
-              <li class="lemon">
-                <h3>Vegetarian</h3>
-                <p>
+              <li class="grid-list-item">
+                <i class="fas fa-lemon"></i>
+                <div>
+                  <h3>Vegetarian</h3>
+                  <p>
                   Gumbo beet greens corn soko endive gumbo gourd. Parsley
                   shallot courgette tatsoi pea sprouts fava bean collard greens
                   dandelion okra.
-                </p>
+                  </p>
+              </div>
               </li>
-              <li class="teacup">
-                <h3>Desserts</h3>
-                <p>
+              <li class="grid-list-item">
+                <i class="fas fa-coffee"></i>
+                <div>
+                  <h3>Desserts</h3>
+                  <p>
                   Gumbo beet greens corn soko endive gumbo gourd. Parsley
                   shallot courgette tatsoi pea sprouts fava bean collard greens
                   dandelion okra.
-                </p>
+                  </p>
+                </div>
               </li>
-              <li class="leaf">
-                <h3>Salads</h3>
-                <p>
+              <li class="grid-list-item">
+                <i class="fas fa-leaf"></i>
+                <div>
+                  <h3>Salads</h3>
+                  <p>
                   Gumbo beet greens corn soko endive gumbo gourd. Parsley
                   shallot courgette tatsoi pea sprouts fava bean collard greens
                   dandelion okra.
-                </p>
+                  </p>
+                </div>
               </li>
-              <li class="cutlery">
-                <h3>Appetizers</h3>
-                <p>
+              <li class="grid-list-item">
+                <i class="fas fa-utensils"></i>
+                <div>
+                  <h3>Appetizers</h3>
+                  <p>
                   Gumbo beet greens corn soko endive gumbo gourd. Parsley
                   shallot courgette tatsoi pea sprouts fava bean collard greens
                   dandelion okra.
-                </p>
+                  </p>
+                </div>               
               </li>
-              <li class="martini">
-                <h3>Drinks</h3>
-                <p>
+              <li class="grid-list-item">
+                <i class="fas fa-glass-martini"></i>
+                <div>
+                  <h3>Drinks</h3>
+                  <p>
                   Gumbo beet greens corn soko endive gumbo gourd. Parsley
                   shallot courgette tatsoi pea sprouts fava bean collard greens
                   dandelion okra.
-                </p>
+                  </p>
+                </div>
               </li>
-              <li class="spoon">
-                <h3>Side Dishes</h3>
-                <p>
+              <li class="grid-list-item">
+                <i class="fas fa-utensil-spoon"></i>
+                <div>
+                  <h3>Side Dishes</h3>
+                  <p>
                   Gumbo beet greens corn soko endive gumbo gourd. Parsley
                   shallot courgette tatsoi pea sprouts fava bean collard greens
                   dandelion okra.
-                </p>
+                  </p>
+                </div>
               </li>
             </ul>
           </article>
@@ -144,7 +147,7 @@
         </div>
       </section>
 
-      <section>
+      <aside>
         <figure>
           <img
             src="./assets/home-4.jpeg"
@@ -160,7 +163,7 @@
           Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce
           kohlra
         </p>
-      </section>
+      </aside>
 
       <section class="gallery">
         <li>
