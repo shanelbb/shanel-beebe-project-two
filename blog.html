@@ -52,11 +52,13 @@
     </header>
 
     <main>
-      <section>
-        <article>
-          <h1>Pinapple Chicken</h1>
-          <p class="byline">Posted at July 11, 2018 | by Admin| in Recipes</p>
-          <p class="blog-post">
+      <section class="blog-featured">
+        <article class="blog-post">
+          <h1 class="post-title">Pinapple Chicken</h1>
+          <p class="post-byline">
+            Posted at July 11, 2018 | by Admin| in Recipes
+          </p>
+          <p class="post-text">
             Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi
             welsh onion daikon amaranth tatsoi tomatillo melon azuki bean
             garlic. Gumbo beet greens corn soko endive gumbo gourd. Parsley
@@ -81,10 +83,106 @@
             beetroot horseradish carrot squash brussels sprout chard.
           </p>
 
-          <div>
-            <p><span>Tags:</span> Recipes, Chicken, Pineapple, Mexican</p>
+          <n class="post-footnotes">
+            <div class="post-tags">
+              <h4>Tags:</h4>
+              <p>Recipes, Chicken, Pineapple, Mexican</p>
+            </div>
+            <nav class="post-share">
+              <h4>Share</h4>
+              <ul>
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </article>
+        <aside class="post-author">
+          <img
+            src="./assets/blog-2.jpeg"
+            alt="Young woman with long, blonde, curly hair."
+            class="post-author-img"
+          />
+          <div class="post-author-text">
+            <h4>Sally Lucas</h4>
+            <p>
+              Turnip greens yarrow ricebean rutabaga endive cauliflower sea
+              lettuce kohlrabi amaranth water spinach avocado daikon napa
+              cabbage asparagus winter purslane kale. Celery potato scallion
+              desert raisin horseradish spinach carrot soko. Lotus root water
+              spinach fennel kombu maize bamboo shoot green bean swiss chard
+              seakale pumpkin onion chickpea gram corn pea. Brussels sprout
+              coriander water chestnut gourd swiss chard wakame kohlrabi.
+            </p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="posts-related">
+        <h4>Related Posts</h4>
+        <ul class="blog-gallery">
+          <li>
+            <img src="./assets/blog-3.jpeg" alt="Person holding a pink cake">
+              <h3>How to Bake The Perfect Cake</h3>
+              <p>July 11, 2018 | by <span>Admin</span> | in <span>Recipes</span></p>
+          </li>
+          <li>
+            <img src="./assets/blog-4.jpeg" alt="Three cupcakes with flower toppers">
+              <h3>Floral Cupcakes</h3>
+              <p>July 22, 2018 | by <span>Admin</span> | in <span>Recipes</span></p>
+          </li>
+          <li>
+            <img src="./assets/blog-5.jpeg" alt="A hand garnishing plate of salmon and veggetables">
+              <h3>Single Post with Image</h3>
+              <p>July 22, 2018 | by <span>Admin</span> | in <span>Recipes</span></p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="comments">
+        <h4>02 Comments</h4>
+
+        <div class="comment">
+          <img class="comment-img" src="./assets/blog-6.jpeg" alt="User profile photo">
+          <div class="comment-text bubble">
+            <h5>Lucatony Avaro <span>- Web Developer</span></h5>
+            <p>Celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
+            <p class="comment-date">Jul 17, 2015 at 15 hours ago</p>
+          </div>
+        </div>
+        
+        <div class="comment">
+          <img class="comment-img" src="./assets/blog-7.jpeg" alt="User profile photo">
+          <div class="comment-text bubble">
+            <h5>Brian Hudson <span>- Web Developer</span></h5>
+            <p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jícama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut. </p>
+            <p class="comment-date">Jul 17, 2015 at 15 hours ago</p>
+          </div>
+        </div>
+
+        <h4>Leave a Comment</h4>
+        <p class="comment-info">Your email address will not be published. Required fields are marked *</p>
+
+        <form action="#" class="comment-form">
+          <fieldset>
+            <label for="name" class="visuallyHidden">Name</label>
+            <input type="text" placeholder="Name *" id="name">
+            <label for="email" class="visuallyHidden">Email</label>
+            <input type="email" placeholder="Email *" id="email">
+            <label for="website" class="visuallyHidden">Your Website</label>
+            <input type="text" placeholder="Your Website" id="website">
+          </fieldset>
+          <label for="comment" class="visuallyHidden">Comment</label>
+          <input type="text" placeholder="Comment" id="comment">
+          <button type="submit">Submit Comment</button>
+        </form>
       </section>
     </main>
 
