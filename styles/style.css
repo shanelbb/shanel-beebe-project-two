@@ -343,8 +343,9 @@ html {
 }
 
 body {
-  font-family: "Lora", serif, serif;
+  font-family: "Lora", serif;
   font-size: 2rem;
+  color: #2e2e2e;
 }
 
 .large-wrapper {
@@ -365,25 +366,13 @@ h5,
 nav a,
 button,
 header span {
-  font-family: "Raleway", sans-serif, sans-serif;
+  font-family: "Raleway", sans-serif;
   text-transform: uppercase;
 }
 
 a {
   text-decoration: none;
   color: #2e2e2e;
-}
-
-.header-home {
-  background-image: url(../assets/home-1.jpeg);
-}
-
-.header-blog {
-  background-image: url(../assets/blog-1.jpeg);
-}
-
-.header-contact {
-  background-image: url(../assets/contact-1.jpeg);
 }
 
 header {
@@ -454,6 +443,27 @@ header .top-bar .nav-header {
   padding: 3px;
 }
 
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-home {
+  background-image: url(../assets/home-1.jpeg);
+}
+
+.header-blog {
+  background-image: url(../assets/blog-1.jpeg);
+}
+
+.header-contact {
+  background-image: url(../assets/contact-1.jpeg);
+}
+
 @media (max-width: 1150px) {
   .nav-header ul li {
     font-size: 1.5rem;
@@ -465,5 +475,11 @@ header .top-bar .nav-header {
     height: 15px;
     font-size: 1rem;
     padding: 2px;
+  }
+}
+
+@media (max-width: 940px) {
+  .nav-menu-icon {
+    display: initial;
   }
 }

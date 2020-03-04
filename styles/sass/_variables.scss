@@ -1,13 +1,21 @@
 // fonts
 
-$baseFont: "Lora", serif;
-$secondFont: "Raleway", sans-serif;
+$base-font: "Lora", serif;
+$second-font: "Raleway", sans-serif;
 
 // colors
 
 $primary: #64a604;
 $secondary: #dded9a;
-$darkGrey: #333333;
-$lightGrey: #999999;
+$dark-grey: #333333;
+$light-grey: #999999;
 $black: #2e2e2e;
 $white: #f6f6f6;
+
+// mixins
+
+@mixin sb-flex() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

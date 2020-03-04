@@ -3,8 +3,9 @@ html {
 }
 
 body {
-  font-family: $baseFont, serif;
+  font-family: $base-font;
   font-size: 2rem;
+  color: $black;
 }
 
 .large-wrapper {
@@ -25,7 +26,7 @@ h5,
 nav a,
 button,
 header span {
-  font-family: $secondFont, sans-serif;
+  font-family: $second-font;
   text-transform: uppercase;
 }
 
