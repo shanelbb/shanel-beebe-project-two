@@ -404,11 +404,28 @@ header .top-bar .nav-header {
           flex: 0 0 60%;
 }
 
-.nav-menu-icon {
+.nav-header {
+  text-align: right;
+}
+
+input.toggle,
+label.toggle {
   display: none;
 }
 
-.nav-header ul {
+label.toggle {
+  color: #2e2e2e;
+  z-index: 6;
+  font-size: 3.5rem;
+}
+
+input {
+  position: absolute;
+  left: -100%;
+  top: 110px;
+}
+
+ul.nav-header-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -420,16 +437,21 @@ header .top-bar .nav-header {
           align-items: center;
 }
 
-.nav-header ul li {
+ul.nav-header-list li {
   font-size: 1.8rem;
   position: relative;
 }
 
-.nav-header ul li a:hover {
+ul.nav-header-list li a {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+ul.nav-header-list li a:hover {
   color: #64a604;
 }
 
-.nav-header ul li span {
+ul.nav-header-list li span {
   position: absolute;
   bottom: -8px;
   right: -13px;
@@ -441,6 +463,15 @@ header .top-bar .nav-header {
   text-align: center;
   font-size: 1.1rem;
   padding: 3px;
+}
+
+footer {
+  background-color: #333333;
+  color: #f6f6f6;
+}
+
+footer .copyright {
+  background-color: #2e2e2e;
 }
 
 .footer-container {
@@ -479,7 +510,36 @@ header .top-bar .nav-header {
 }
 
 @media (max-width: 940px) {
-  .nav-menu-icon {
+  .nav-header {
+    position: relative;
+  }
+  .nav-header .nav-header-list {
+    display: none;
+  }
+  .nav-header .nav-header-list li {
+    margin: 15px;
+  }
+  label.toggle {
     display: initial;
+  }
+  input[type="checkbox"]:checked + ul.nav-header-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    left: -50;
+    top: 40px;
+    width: 100%;
+    background-color: #f6f6f6;
+    border-radius: 3px;
+    z-index: 1;
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
 }

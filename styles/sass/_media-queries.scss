@@ -18,7 +18,33 @@
 }
 
 @media (max-width: 940px) {
-  .nav-menu-icon {
+  .nav-header {
+    position: relative;
+
+    .nav-header-list {
+      display: none;
+
+      li {
+        margin: 15px;
+      }
+    }
+  }
+
+  label.toggle {
     display: initial;
+  }
+
+  input[type="checkbox"]:checked + ul.nav-header-list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: -50;
+    top: 40px;
+    width: 100%;
+    background-color: $white;
+    border-radius: 3px;
+    z-index: 1;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
+    transition: all 0.5s;
   }
 }
