@@ -1,0 +1,35 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $baseFont, serif;
+  font-size: 2rem;
+}
+
+.large-wrapper {
+  max-width: 1850px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+nav a,
+button,
+header span {
+  font-family: $secondFont, sans-serif;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}

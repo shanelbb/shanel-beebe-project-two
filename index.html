@@ -19,40 +19,42 @@
     <title>Delicious</title>
   </head>
   <body>
-    <header class="header-home">
-      <h1 class="header-logo">Delicious</h1>
+    <header class="header-home large-wrapper">
+      <div class="top-bar">
+        <h1 class="header-logo">Delicious</h1>
 
-      <!-- navigation menu starts here -->
-      <div class="nav-header">
-        <div class="nav-menu-icon">
-          <label for="toggle" class="toggle"><i class="fas fa-bars"></i></label>
-          <input type="checkbox" id="toggle" class="toggle" />
-        </div>
-        
+        <!-- navigation menu starts here -->
+        <nav class="nav-header">
+          <div class="nav-menu-icon">
+            <label for="toggle" class="toggle"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="toggle" class="toggle" />
+          </div>
+          
           <ul class="nav-header-list">
-          <li><a href="#" class="nav-header-item">Home</a></li>
-          <li><a href="#" class="nav-header-item">About</a></li>
-          <li><a href="#" class="nav-header-item">Recipes</a></li>
-          <li><a href="#" class="nav-header-item">Nutrition</a></li>
-          <li><a href="#" class="nav-header-item">Blog</a></li>
-          <li><a href="#" class="nav-header-item">Shop</a></li>
-          <li><a href="#" class="nav-header-item">Contact</a></li>
-          <li>
-            <a href="#" class="nav-header-item nav-header-item-icon">
-              <i class="fas fa-shopping-bag"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-header-item nav-header-item-icon">
-              <i class="fas fa-search"></i>
-            </a>
-          </li>
-        </ul>
+            <li><a href="#" class="nav-header-item">Home</a></li>
+            <li><a href="#" class="nav-header-item">About</a></li>
+            <li><a href="#" class="nav-header-item">Recipes</a></li>
+            <li><a href="#" class="nav-header-item">Nutrition</a></li>
+            <li><a href="#" class="nav-header-item">Blog</a></li>
+            <li><a href="#" class="nav-header-item">Shop</a></li>
+            <li><a href="#" class="nav-header-item">Contact</a></li>
+            <li>
+              <a href="#" class="nav-header-item nav-header-item-icon">
+                <i class="fas fa-shopping-bag"></i>
+              </a>
+              <span>2</span>
+            </li>
+            <li>
+              <a href="#" class="nav-header-item nav-header-item-icon">
+                <i class="fas fa-search"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- navigation menu ends here -->
       </div>
-      <!-- navigation menu ends here -->
-
     </header>
-    <main>
+    <main class="large-wrapper">
       <section class="grid">
         <div class="grid-top">
           <article class="grid-text">
@@ -208,52 +210,54 @@
       </section>
     </main>
 
-    <footer>
-      <section class="footer-contact">
-        <h4>Delicious</h4>
-        <p class="footer-text">Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage.</p>
-        <p class="footer-address">
+    <footer class="large-wrapper">
+      <div class="wrapper">
+        <section class="footer-contact">
+          <h4>Delicious</h4>
+          <p class="footer-text">Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage.</p>
+          <p class="footer-address">
           a delicious restaurant<br/>
           Toronto, Ontario
-        </p>
-        <p class="footer-email">yum@food.com</p>
-        <p class="footer-phone">+1 234 567 8910</p>
-      </section>
-
-      <section class="recent">
-        <h5>Recent Posts</h5>
-        <ul>
+          </p>
+          <p class="footer-email">yum@food.com</p>
+          <p class="footer-phone">+1 234 567 8910</p>
+        </section>
+          
+        <section class="recent">
+          <h5>Recent Posts</h5>
+          <ul>
           <li><a href="#">Beetroot water spinach okra water</a></li>
           <li><a href="#">Celery quandong swiss chard chicory</a></li>
           <li><a href="#">Salsify taro catsear garlic gram celery</a></li>
           <li><a href="#">Pea horseradish azuki bean lettuce</a></li>
           <li><a href="#">Water spinach arugula pea tatsoi</a></li>
           <li><a href="#">Sea lettuce gumbo grape kale kombu</a></li>
-        </ul>
-      </section>
+          </ul>
+        </section>
+          
+        <section class="subscribe">
+          <h5>Subscribe Now</h5>
+          <p>Get all of our newest recipes immediately in your inbox</p>
+          
+          <form action="">
+            <label for="email" class="visuallyHidden">Enter Your Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <button><i class="fas fa-long-arrow-alt-right"></i></button>
+          </form>
 
-      <section class="subscribe">
-        <h5>Subscribe Now</h5>
-        <p>Get all of our newest recipes immediately in your inbox</p>
-        <form action="">
-          <label for="email" class="visuallyHidden">Enter Your Email</label>
-          <input type="email" name="email" id="email" placeholder="Enter your email">
-          <button><i class="fas fa-long-arrow-alt-right"></i></button>
-        </form>
-      </section>
-      <section>
-        <nav class="nav-footer-social">
-          <ul>
+          <nav class="nav-footer-social">
+            <ul>
             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          </ul>
-        </nav>
-      </section>
-
-      <section class="copyright">
-        <p>Copyright &#169; 2015 by <span>Polar</span>. All Rights Reserved</p>
-      </section>
+            </ul>
+          </nav>
+        </section>
+          
+        <section class="copyright">
+          <p>Copyright &#169; 2015 by <span>Polar</span>. All Rights Reserved</p>
+        </section>
+      </div>
     </footer>
   </body>
 </html>

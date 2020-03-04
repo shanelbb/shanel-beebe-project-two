@@ -18,144 +18,155 @@
     <title>Contact</title>
   </head>
   <body>
-    <header class="header-contact">
-      <h2 class="header-logo">Delicious</h2>
+    <header class="header-contact large-wrapper">
+      <div class="top-bar">
+        <h2 class="header-logo">Delicious</h2>
 
-      <!-- navigation menu starts here -->
-      <div class="nav-header">
-        <div class="nav-menu-icon">
-          <label for="toggle" class="toggle"><i class="fas fa-bars"></i></label>
-          <input type="checkbox" id="toggle" class="toggle" />
-        </div>
+        <!-- navigation menu starts here -->
+        <nav class="nav-header">
+          <div class="nav-menu-icon">
+            <label for="toggle" class="toggle"
+              ><i class="fas fa-bars"></i
+            ></label>
+            <input type="checkbox" id="toggle" class="toggle" />
+          </div>
 
-        <ul class="nav-header-list">
-          <li><a href="#" class="nav-header-item">Home</a></li>
-          <li><a href="#" class="nav-header-item">About</a></li>
-          <li><a href="#" class="nav-header-item">Recipes</a></li>
-          <li><a href="#" class="nav-header-item">Nutrition</a></li>
-          <li><a href="#" class="nav-header-item">Blog</a></li>
-          <li><a href="#" class="nav-header-item">Shop</a></li>
-          <li><a href="#" class="nav-header-item">Contact</a></li>
-          <li>
-            <a href="#" class="nav-header-item nav-header-item-icon">
-              <i class="fas fa-shopping-bag"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-header-item nav-header-item-icon">
-              <i class="fas fa-search"></i>
-            </a>
-          </li>
-        </ul>
+          <ul class="nav-header-list">
+            <li><a href="#" class="nav-header-item">Home</a></li>
+            <li><a href="#" class="nav-header-item">About</a></li>
+            <li><a href="#" class="nav-header-item">Recipes</a></li>
+            <li><a href="#" class="nav-header-item">Nutrition</a></li>
+            <li><a href="#" class="nav-header-item">Blog</a></li>
+            <li><a href="#" class="nav-header-item">Shop</a></li>
+            <li><a href="#" class="nav-header-item">Contact</a></li>
+            <li>
+              <a href="#" class="nav-header-item nav-header-item-icon">
+                <i class="fas fa-shopping-bag"></i>
+              </a>
+              <span>2</span>
+            </li>
+            <li>
+              <a href="#" class="nav-header-item nav-header-item-icon">
+                <i class="fas fa-search"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- navigation menu ends here -->
       </div>
-      <!-- navigation menu ends here -->
     </header>
 
     <main>
-      <section class="contact-form">
-        <h1>Drop Us a Line</h1>
-        <form action="#" class="contact-inputs">
-          <fieldset>
-            <label for="name" class="visuallyHidden">Your Name</label>
-            <input type="text" placeholder="Your Name" id="name" />
-            <label for="email" class="visuallyHidden">Your Email</label>
-            <input type="text" placeholder="Your Email" id="email" />
-          </fieldset>
-          <label for="subject" class="visuallyHidden">Subject</label>
-          <input type="text" placeholder="Subject" id="subject" />
-          <label for="message" class="visuallyHidden">Message</label>
-          <input type="text" placeholder="Message" id="message" />
-          <button type="submit" class="submit-link">
-            Send Message<i class="fas fa-long-arrow-alt-right"></i>
-          </button>
-        </form>
-      </section>
+      <div class="wrapper">
+        <section class="contact-form">
+          <h1>Drop Us a Line</h1>
+          <form action="#" class="contact-inputs">
+            <fieldset>
+              <label for="name" class="visuallyHidden">Your Name</label>
+              <input type="text" placeholder="Your Name" id="name" />
+              <label for="email" class="visuallyHidden">Your Email</label>
+              <input type="text" placeholder="Your Email" id="email" />
+            </fieldset>
+            <label for="subject" class="visuallyHidden">Subject</label>
+            <input type="text" placeholder="Subject" id="subject" />
+            <label for="message" class="visuallyHidden">Message</label>
+            <input type="text" placeholder="Message" id="message" />
+            <button type="submit" class="submit-link">
+              Send Message<i class="fas fa-long-arrow-alt-right"></i>
+            </button>
+          </form>
+        </section>
 
-      <section class="contact-details">
-        <h3>Contact Details</h3>
-        <p>
-          Beetroot water spinach okra water chestnut ricebean pea catsear
-          courgette summer purslane. Water spinach arugula pea tatsoi aubergine
-          spring onion bush tomato kale.
-        </p>
+        <section class="contact-details">
+          <h3>Contact Details</h3>
+          <p>
+            Beetroot water spinach okra water chestnut ricebean pea catsear
+            courgette summer purslane. Water spinach arugula pea tatsoi
+            aubergine spring onion bush tomato kale.
+          </p>
 
-        <h5>Working Hours</h5>
-        <p><strong>Mon - Fri : </strong>08:00am - 05:30pm</p>
-        <p class="hours-info">Not working on Saturday and Sunday</p>
+          <h5>Working Hours</h5>
+          <p><strong>Mon - Fri : </strong>08:00am - 05:30pm</p>
+          <p class="hours-info">Not working on Saturday and Sunday</p>
 
-        <h5>Contact Info</h5>
-        <p>
-          A delicious restuarant <br />
-          Toronto, Ontario
-        </p>
-        <p>yum@food.com</p>
-        <p>+1 234 567 8910</p>
-      </section>
-      <figure>
+          <h5>Contact Info</h5>
+          <p>
+            A delicious restuarant <br />
+            Toronto, Ontario
+          </p>
+          <p>yum@food.com</p>
+          <p>+1 234 567 8910</p>
+        </section>
+      </div>
+      <figure class="large-wrapper">
         <!-- background image -->
       </figure>
     </main>
 
-    <footer>
-      <section class="footer-contact">
-        <h4>Delicious</h4>
-        <p class="footer-text">
-          Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage
-          lotus root sea lettuce brussels sprout cabbage.
-        </p>
-        <p class="footer-address">
-          a delicious restaurant<br />
-          Toronto, Ontario
-        </p>
-        <p class="footer-email">yum@food.com</p>
-        <p class="footer-phone">+1 234 567 8910</p>
-      </section>
+    <footer class="large-wrapper">
+      <div class="wrapper">
+        <section class="footer-contact">
+          <h4>Delicious</h4>
+          <p class="footer-text">
+            Soko radicchio bunya nuts gram dulse silver beet parsnip napa
+            cabbage lotus root sea lettuce brussels sprout cabbage.
+          </p>
+          <p class="footer-address">
+            a delicious restaurant<br />
+            Toronto, Ontario
+          </p>
+          <p class="footer-email">yum@food.com</p>
+          <p class="footer-phone">+1 234 567 8910</p>
+        </section>
 
-      <section class="recent">
-        <h5>Recent Posts</h5>
-        <ul>
-          <li><a href="#">Beetroot water spinach okra water</a></li>
-          <li><a href="#">Celery quandong swiss chard chicory</a></li>
-          <li><a href="#">Salsify taro catsear garlic gram celery</a></li>
-          <li><a href="#">Pea horseradish azuki bean lettuce</a></li>
-          <li><a href="#">Water spinach arugula pea tatsoi</a></li>
-          <li><a href="#">Sea lettuce gumbo grape kale kombu</a></li>
-        </ul>
-      </section>
-
-      <section class="subscribe">
-        <h5>Subscribe Now</h5>
-        <p>Get all of our newest recipes immediately in your inbox</p>
-        <form action="">
-          <label for="email" class="visuallyHidden">Enter Your Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter your email"
-          />
-          <button><i class="fas fa-long-arrow-alt-right"></i></button>
-        </form>
-      </section>
-      <section>
-        <nav class="nav-footer-social">
+        <section class="recent">
+          <h5>Recent Posts</h5>
           <ul>
-            <li>
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-            </li>
+            <li><a href="#">Beetroot water spinach okra water</a></li>
+            <li><a href="#">Celery quandong swiss chard chicory</a></li>
+            <li><a href="#">Salsify taro catsear garlic gram celery</a></li>
+            <li><a href="#">Pea horseradish azuki bean lettuce</a></li>
+            <li><a href="#">Water spinach arugula pea tatsoi</a></li>
+            <li><a href="#">Sea lettuce gumbo grape kale kombu</a></li>
           </ul>
-        </nav>
-      </section>
+        </section>
 
-      <section class="copyright">
-        <p>Copyright &#169; 2015 by <span>Polar</span>. All Rights Reserved</p>
-      </section>
+        <section class="subscribe">
+          <h5>Subscribe Now</h5>
+          <p>Get all of our newest recipes immediately in your inbox</p>
+
+          <form action="">
+            <label for="email" class="visuallyHidden">Enter Your Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+            />
+            <button><i class="fas fa-long-arrow-alt-right"></i></button>
+          </form>
+
+          <nav class="nav-footer-social">
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+
+        <section class="copyright">
+          <p>
+            Copyright &#169; 2015 by <span>Polar</span>. All Rights Reserved
+          </p>
+        </section>
+      </div>
     </footer>
   </body>
 </html>
