@@ -28,18 +28,9 @@ label.toggle {
 }
 
 label.toggle {
-  // position: fixed;
-  // top: 18px;
-  // right: 25px;
   color: $black;
   z-index: 6;
   font-size: 3.5rem;
-}
-
-input {
-  position: absolute;
-  left: -100%;
-  top: 110px;
 }
 
 ul.nav-header-list {

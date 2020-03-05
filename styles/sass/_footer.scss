@@ -1,11 +1,89 @@
 footer {
   background-color: $dark-grey;
   color: $white;
-  .copyright {
-    background-color: $black;
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 75px 0;
+
+    section {
+      max-width: 30%;
+      margin-right: 20px;
+
+      h4 {
+        font-size: 3rem;
+        color: $primary;
+        padding-bottom: 30px;
+      }
+
+      h5 {
+        font-size: 1.8rem;
+        padding-bottom: 40px;
+      }
+
+      p,
+      li,
+      a {
+        font-size: 1.3rem;
+        color: $light-grey;
+        line-height: 20px;
+        padding: 10px 0;
+      }
+
+      p:not(:last-of-type),
+      li:not(:last-of-type) {
+        border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+      }
+
+      .recent a {
+        color: $white;
+      }
+
+      form {
+        display: flex;
+        margin: 20px 0;
+
+        input {
+          font-size: 1.3rem;
+          font-family: $base-font;
+          font-style: italic;
+          padding-left: 10px;
+          border: none;
+          color: $light-grey;
+          background-color: rgba(153, 153, 153, 0.2);
+          height: 35px;
+        }
+        button {
+          border: none;
+          background-color: $primary;
+          color: $white;
+          width: 35px;
+        }
+      }
+    }
   }
-}
-.footer-container {
-  display: flex;
-  justify-content: space-between;
+
+  .nav-footer-social ul {
+    display: flex;
+    li {
+      margin-right: 15px;
+
+      a {
+        color: $white;
+      }
+    }
+  }
+
+  .copyright {
+    font-family: $second-font;
+    font-size: 1.3rem;
+    background-color: $black;
+    padding: 15px 0;
+
+    span {
+      color: $primary;
+    }
+  }
 }
