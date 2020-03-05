@@ -575,6 +575,15 @@ footer section .nav-footer-social ul li a {
   color: #64a604;
 }
 
+.main-home h2:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  padding-top: 15px;
+  border-bottom: 3px solid #64a604;
+}
+
 .grid-top-img {
   background-image: url(../assets/home-2.jpeg);
   background-size: cover;
@@ -597,6 +606,7 @@ footer section .nav-footer-social ul li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 500px;
 }
 
 .grid-top article,
@@ -613,7 +623,7 @@ footer section .nav-footer-social ul li a {
 }
 
 .grid-text h2 {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .grid-text p {
@@ -624,10 +634,8 @@ footer section .nav-footer-social ul li a {
 }
 
 .grid-text .btn {
-  height: 30px;
-  width: 150px;
   margin-top: 30px;
-  padding: 15px;
+  padding: 15px 30px;
   font-family: "Raleway", sans-serif;
   font-size: 1.3rem;
   background-color: #64a604;
@@ -672,6 +680,43 @@ footer section .nav-footer-social ul li a {
   font-size: 1.3rem;
   color: #999999;
   line-height: 20px;
+}
+
+.home-aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 175px 0 75px 0;
+  max-width: 50%;
+}
+
+.home-aside figure {
+  position: relative;
+}
+
+.home-aside figure img {
+  margin-bottom: 50px;
+}
+
+.home-aside figure .stamp {
+  position: absolute;
+  top: -125px;
+  right: -80px;
+}
+
+.home-aside p {
+  font-size: 1.3rem;
+  color: #999999;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 15px;
 }
 
 .header-blog {

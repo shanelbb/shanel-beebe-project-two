@@ -28,9 +28,7 @@ footer section {
   p,
   li,
   a {
-    font-size: 1.3rem;
-    color: $light-grey;
-    line-height: 20px;
+    @include body-font();
     padding: 10px 0;
   }
 

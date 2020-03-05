@@ -19,3 +19,9 @@ $white: #f6f6f6;
   justify-content: space-between;
   align-items: center;
 }
+
+@mixin body-font() {
+  font-size: 1.3rem;
+  color: $light-grey;
+  line-height: 20px;
+}
