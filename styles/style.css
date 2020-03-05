@@ -469,7 +469,7 @@ footer {
   color: #f6f6f6;
 }
 
-footer .footer-container {
+.footer-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -481,48 +481,48 @@ footer .footer-container {
   padding: 75px 0;
 }
 
-footer .footer-container section {
+footer section {
   max-width: 30%;
   margin-right: 20px;
 }
 
-footer .footer-container section h4 {
+footer section h4 {
   font-size: 3rem;
   color: #64a604;
   padding-bottom: 30px;
 }
 
-footer .footer-container section h5 {
+footer section h5 {
   font-size: 1.8rem;
   padding-bottom: 40px;
 }
 
-footer .footer-container section p,
-footer .footer-container section li,
-footer .footer-container section a {
+footer section p,
+footer section li,
+footer section a {
   font-size: 1.3rem;
   color: #999999;
   line-height: 20px;
   padding: 10px 0;
 }
 
-footer .footer-container section p:not(:last-of-type),
-footer .footer-container section li:not(:last-of-type) {
+footer section p:not(:last-of-type),
+footer section li:not(:last-of-type) {
   border-bottom: 1px solid rgba(153, 153, 153, 0.3);
 }
 
-footer .footer-container section .recent a {
+footer section .recent a {
   color: #f6f6f6;
 }
 
-footer .footer-container section form {
+footer section form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 20px 0;
 }
 
-footer .footer-container section form input {
+footer section form input {
   font-size: 1.3rem;
   font-family: "Lora", serif;
   font-style: italic;
@@ -533,35 +533,37 @@ footer .footer-container section form input {
   height: 35px;
 }
 
-footer .footer-container section form button {
+footer section form button {
   border: none;
   background-color: #64a604;
   color: #f6f6f6;
   width: 35px;
 }
 
-footer .nav-footer-social ul {
+footer section .nav-footer-social ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-footer .nav-footer-social ul li {
+footer section .nav-footer-social ul li {
   margin-right: 15px;
+  border-bottom: none;
 }
 
-footer .nav-footer-social ul li a {
+footer section .nav-footer-social ul li a {
   color: #f6f6f6;
+  border-bottom: none;
 }
 
-footer .copyright {
+.copyright {
   font-family: "Raleway", sans-serif;
   font-size: 1.3rem;
   background-color: #2e2e2e;
   padding: 15px 0;
 }
 
-footer .copyright span {
+.copyright span {
   color: #64a604;
 }
 
