@@ -6,7 +6,6 @@ footer {
 .footer-container {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   padding: 75px 0;
 }
 
@@ -32,13 +31,22 @@ footer section {
     padding: 10px 0;
   }
 
+  a {
+    transition: all 0.5s;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
   p:not(:last-of-type),
   li:not(:last-of-type) {
     border-bottom: 1px solid rgba(153, 153, 153, 0.3);
   }
 
-  .recent a {
+  .recent-posts {
     color: $white;
+    font-size: 1.8rem;
   }
 
   form {
@@ -60,17 +68,28 @@ footer section {
       background-color: $primary;
       color: $white;
       width: 35px;
+      transition: all 0.5s;
+
+      &:hover {
+        background-color: $white;
+        color: $primary;
+      }
     }
   }
-  .nav-footer-social ul {
-    display: flex;
-    li {
-      margin-right: 15px;
+}
+
+.nav-footer-social ul {
+  display: flex;
+  li {
+    margin-right: 15px;
+    border-bottom: none;
+
+    a {
+      color: $white;
       border-bottom: none;
 
-      a {
-        color: $white;
-        border-bottom: none;
+      &:hover {
+        color: $primary;
       }
     }
   }
