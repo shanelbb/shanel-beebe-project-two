@@ -5,3 +5,125 @@
 .blog-link {
   color: $primary;
 }
+
+.main-blog {
+  padding: 100px 0;
+
+  h4 {
+    font-size: 1.6rem;
+    padding-right: 15px;
+  }
+}
+
+.post-title {
+  font-size: 2.4rem;
+  padding-bottom: 8px;
+}
+
+.post-byline,
+.related-byline {
+  font-family: $second-font;
+  font-size: 1.2rem;
+  color: $light-grey;
+  padding-bottom: 20px;
+}
+
+.post-text {
+  @include body-font();
+  padding: 10px 0;
+}
+
+.post-tags {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+
+  p {
+    @include body-font();
+  }
+}
+
+.post-share {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+
+  ul {
+    display: flex;
+    align-items: center;
+
+    li {
+      padding-right: 25px;
+      font-size: 1.6rem;
+
+      a {
+        color: $light-grey;
+
+        &:hover {
+          color: $dark-grey;
+        }
+      }
+    }
+  }
+}
+
+.post-footnotes {
+  margin: 20px 0;
+  border-top: 1px solid rgba(153, 153, 153, 0.3);
+  border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+}
+
+.post-author {
+  padding: 20px 0 40px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+}
+
+.post-author img {
+  width: calc(25% - 20px);
+  object-fit: cover;
+}
+
+.post-author-text {
+  width: 75%;
+  background-color: #f5f5f5;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  p {
+    @include body-font();
+    padding-top: 20px;
+  }
+}
+
+.posts-related {
+  padding: 40px 0;
+
+  h4 {
+    padding-bottom: 20px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+
+    li:not(:last-of-type) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.posts-related ul li {
+  width: calc((100% - 40px) / 3);
+  img {
+    padding-bottom: 20px;
+    min-width: 100%;
+  }
+  h3 {
+    font-size: 1.8rem;
+    padding-bottom: 5px;
+  }
+}

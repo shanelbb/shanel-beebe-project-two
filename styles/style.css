@@ -496,9 +496,9 @@ footer section h5 {
 footer section p,
 footer section li,
 footer section a {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #999999;
-  line-height: 20px;
+  line-height: 22px;
   padding: 10px 0;
 }
 
@@ -644,9 +644,9 @@ footer section form button:hover {
 }
 
 .grid-text p {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #999999;
-  line-height: 20px;
+  line-height: 22px;
   margin-bottom: 30px;
 }
 
@@ -693,9 +693,9 @@ footer section form button:hover {
 }
 
 .grid-list-item div p {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #999999;
-  line-height: 20px;
+  line-height: 22px;
 }
 
 .home-aside {
@@ -728,9 +728,9 @@ footer section form button:hover {
 }
 
 .home-aside p {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #999999;
-  line-height: 20px;
+  line-height: 22px;
   text-align: center;
   margin-top: 15px;
 }
@@ -809,6 +809,164 @@ footer section form button:hover {
   color: #64a604;
 }
 
+.main-blog {
+  padding: 100px 0;
+}
+
+.main-blog h4 {
+  font-size: 1.6rem;
+  padding-right: 15px;
+}
+
+.post-title {
+  font-size: 2.4rem;
+  padding-bottom: 8px;
+}
+
+.post-byline,
+.related-byline {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  color: #999999;
+  padding-bottom: 20px;
+}
+
+.post-text {
+  font-size: 1.4rem;
+  color: #999999;
+  line-height: 22px;
+  padding: 10px 0;
+}
+
+.post-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0;
+}
+
+.post-tags p {
+  font-size: 1.4rem;
+  color: #999999;
+  line-height: 22px;
+}
+
+.post-share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 30px;
+}
+
+.post-share ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.post-share ul li {
+  padding-right: 25px;
+  font-size: 1.6rem;
+}
+
+.post-share ul li a {
+  color: #999999;
+}
+
+.post-share ul li a:hover {
+  color: #333333;
+}
+
+.post-footnotes {
+  margin: 20px 0;
+  border-top: 1px solid rgba(153, 153, 153, 0.3);
+  border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+}
+
+.post-author {
+  padding: 20px 0 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+}
+
+.post-author img {
+  width: calc(25% - 20px);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.post-author-text {
+  width: 75%;
+  background-color: #f5f5f5;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.post-author-text p {
+  font-size: 1.4rem;
+  color: #999999;
+  line-height: 22px;
+  padding-top: 20px;
+}
+
+.posts-related {
+  padding: 40px 0;
+}
+
+.posts-related h4 {
+  padding-bottom: 20px;
+}
+
+.posts-related ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.posts-related ul li:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+.posts-related ul li {
+  width: calc((100% - 40px) / 3);
+}
+
+.posts-related ul li img {
+  padding-bottom: 20px;
+  min-width: 100%;
+}
+
+.posts-related ul li h3 {
+  font-size: 1.8rem;
+  padding-bottom: 5px;
+}
+
 .header-contact {
   background-image: url(../assets/contact-1.jpeg);
 }
@@ -817,7 +975,7 @@ footer section form button:hover {
   color: #64a604;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1320px) {
   .grid-list-item i {
     font-size: 1.8rem;
   }
@@ -866,7 +1024,7 @@ footer section form button:hover {
   .grid-top article.grid-text p,
   .grid-bottom article.grid-text p {
     font-size: 1.6rem;
-    line-height: 23px;
+    line-height: 24px;
     margin: 30px 0 50px 0;
   }
   .grid-top article.grid-list,
@@ -909,7 +1067,7 @@ footer section form button:hover {
   }
   .grid-list-item div p {
     font-size: 1.6rem;
-    line-height: 23px;
+    line-height: 24px;
   }
   .home-aside {
     max-width: 80%;
@@ -1004,6 +1162,34 @@ footer section form button:hover {
   }
   .gallery ul li {
     width: 50%;
+  }
+  .post-author {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .post-author img {
+    margin-bottom: 20px;
+    min-width: 100%;
+  }
+  .post-author-text {
+    width: 100%;
+  }
+  .posts-related ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .posts-related ul li {
+    width: 100%;
+  }
+  .posts-related ul li:not(:last-of-type) {
+    margin-right: 0;
   }
 }
 
