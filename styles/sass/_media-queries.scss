@@ -1,3 +1,20 @@
+@media (max-width: 1250px) {
+  .grid-list-item {
+    i {
+      font-size: 1.8rem;
+    }
+    div {
+      padding-bottom: 20px;
+      h3 {
+        font-size: 1.3rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
 @media (max-width: 1150px) {
   .nav-header ul {
     li {
@@ -17,15 +34,93 @@
   }
 }
 
+@media (max-width: 1040px) {
+  .main-home h2:after {
+    padding-top: 30px;
+  }
+
+  .grid-top,
+  .grid-bottom {
+    flex-direction: column;
+    height: 100%;
+
+    article.grid-text {
+      width: 80%;
+      padding: 100px 0;
+
+      p {
+        font-size: 1.6rem;
+        line-height: 23px;
+        margin: 30px 0 50px 0;
+      }
+    }
+
+    article.grid-list {
+      width: 100%;
+      padding: 40px 15px 0 15px;
+      ul {
+        padding-right: 0;
+        li {
+          width: 90%;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    figure {
+      width: 100%;
+    }
+  }
+
+  .grid-bottom article {
+    order: -1;
+    flex-direction: column;
+    height: initial;
+  }
+
+  .grid-list-item {
+    i {
+      font-size: 2rem;
+    }
+
+    div {
+      padding-bottom: 40px;
+
+      h3 {
+        font-size: 2rem;
+        padding-bottom: 10px;
+      }
+
+      p {
+        font-size: 1.6rem;
+        line-height: 23px;
+      }
+    }
+  }
+
+  .home-aside {
+    max-width: 80%;
+
+    p {
+      font-size: 1.6rem;
+      line-height: 23px;
+      margin: 30px 0 0 0;
+    }
+  }
+}
+
 @media (max-width: 940px) {
-  .nav-header {
-    position: relative;
+  header .top-bar {
+    .nav-header {
+      position: relative;
 
-    .nav-header-list {
-      display: none;
+      .nav-header-list {
+        display: none;
+        padding: 10px 0;
 
-      li {
-        margin: 15px;
+        li {
+          margin: 15px;
+        }
       }
     }
   }
@@ -38,15 +133,62 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: -50;
     top: 40px;
     width: 100%;
+    min-height: 70vh;
     background-color: $white;
     border-radius: 3px;
     z-index: 1;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
     transition: all 0.5s;
-    li {
+  }
+}
+
+@media (max-width: 850px) {
+  .home-aside figure .stamp {
+    top: -90px;
+    right: -40px;
+  }
+
+  .gallery ul li:nth-child(3n) {
+    display: none;
+  }
+
+  .gallery ul li {
+    width: 50%;
+  }
+}
+
+@media (max-width: 670px) {
+  header {
+    padding: 15px;
+    .top-bar .header-logo {
+      font-size: 3.8rem;
+    }
+  }
+
+  label.toggle {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .home-aside figure .stamp {
+    width: 150px;
+    top: -65px;
+    right: -20px;
+  }
+
+  .quote blockquote {
+    .left,
+    .right {
+      font-size: 35px;
+    }
+    .left {
+      left: -50px;
+    }
+    .right {
+      right: -50px;
     }
   }
 }
