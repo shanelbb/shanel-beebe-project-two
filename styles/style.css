@@ -534,8 +534,8 @@ footer section form input {
   font-style: italic;
   padding-left: 10px;
   border: none;
-  color: #999999;
-  background-color: rgba(153, 153, 153, 0.2);
+  color: #f6f6f6;
+  background-color: rgba(153, 153, 153, 0.3);
   height: 35px;
 }
 
@@ -645,7 +645,7 @@ footer section form button:hover {
 
 .grid-text p {
   font-size: 1.4rem;
-  color: #999999;
+  color: #333333;
   line-height: 22px;
   margin-bottom: 30px;
 }
@@ -669,7 +669,7 @@ footer section form button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f5f5f5;
+  background-color: #e8e8e8;
 }
 
 .grid-list-1 {
@@ -694,7 +694,7 @@ footer section form button:hover {
 
 .grid-list-item div p {
   font-size: 1.4rem;
-  color: #999999;
+  color: #333333;
   line-height: 22px;
 }
 
@@ -729,7 +729,7 @@ footer section form button:hover {
 
 .home-aside p {
   font-size: 1.4rem;
-  color: #999999;
+  color: #333333;
   line-height: 22px;
   text-align: center;
   margin-top: 15px;
@@ -818,6 +818,14 @@ footer section form button:hover {
   padding-right: 15px;
 }
 
+.post-text,
+.post-tags p,
+.comment-text p {
+  font-size: 1.4rem;
+  color: #333333;
+  line-height: 22px;
+}
+
 .post-title {
   font-size: 2.4rem;
   padding-bottom: 8px;
@@ -832,9 +840,6 @@ footer section form button:hover {
 }
 
 .post-text {
-  font-size: 1.4rem;
-  color: #999999;
-  line-height: 22px;
   padding: 10px 0;
 }
 
@@ -849,9 +854,7 @@ footer section form button:hover {
 }
 
 .post-tags p {
-  font-size: 1.4rem;
   color: #999999;
-  line-height: 22px;
 }
 
 .post-share {
@@ -911,7 +914,7 @@ footer section form button:hover {
 
 .post-author-text {
   width: 75%;
-  background-color: #f5f5f5;
+  background-color: #e8e8e8;
   padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -927,13 +930,14 @@ footer section form button:hover {
 
 .post-author-text p {
   font-size: 1.4rem;
-  color: #999999;
+  color: #333333;
   line-height: 22px;
   padding-top: 20px;
 }
 
 .posts-related {
-  padding: 40px 0;
+  padding: 40px 0 20px 0;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.3);
 }
 
 .posts-related h4 {
@@ -965,6 +969,75 @@ footer section form button:hover {
 .posts-related ul li h3 {
   font-size: 1.8rem;
   padding-bottom: 5px;
+}
+
+.comments {
+  margin-top: 40px;
+}
+
+.comments h4 {
+  padding-bottom: 40px;
+}
+
+.comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-bottom: 20px;
+}
+
+.comment img {
+  margin-right: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 75px;
+}
+
+.comment .comment-text {
+  width: 90%;
+}
+
+.comment .comment-text h5,
+.comment .comment-text p {
+  padding-bottom: 10px;
+}
+
+.comment .comment-text .comment-date {
+  font-family: "Raleway", sans-serif;
+}
+
+.bubble {
+  background-color: #e8e8e8;
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+}
+
+.bubble h5 {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+
+.bubble h5 span {
+  font-family: "Lora", serif;
+  font-size: 1.3rem;
+  color: #333333;
+}
+
+.bubble::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -15px;
+  top: 15px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 15px solid #e8e8e8;
 }
 
 .header-contact {
@@ -1099,8 +1172,8 @@ footer section form button:hover {
   .recent {
     margin: 40px 0;
     padding-top: 40px;
-    border-top: 1px solid rgba(153, 153, 153, 0.8);
-    border-bottom: 1px solid rgba(153, 153, 153, 0.8);
+    border-top: 1px solid rgba(153, 153, 153, 0.3);
+    border-bottom: 1px solid rgba(153, 153, 153, 0.3);
   }
   .recent ul {
     display: none;

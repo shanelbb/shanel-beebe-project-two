@@ -27,7 +27,9 @@ footer section {
   p,
   li,
   a {
-    @include body-font();
+    font-size: 1.4rem;
+    color: $light-grey;
+    line-height: 22px;
     padding: 10px 0;
   }
 
@@ -41,7 +43,7 @@ footer section {
 
   p:not(:last-of-type),
   li:not(:last-of-type) {
-    border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+    border-bottom: 1px solid $trans-grey;
   }
 
   .recent-posts {
@@ -59,8 +61,8 @@ footer section {
       font-style: italic;
       padding-left: 10px;
       border: none;
-      color: $light-grey;
-      background-color: rgba(153, 153, 153, 0.2);
+      color: $white;
+      background-color: $trans-grey;
       height: 35px;
     }
     button {

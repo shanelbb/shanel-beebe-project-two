@@ -134,8 +134,8 @@
   .recent {
     margin: 40px 0;
     padding-top: 40px;
-    border-top: 1px solid rgba(153, 153, 153, 0.8);
-    border-bottom: 1px solid rgba(153, 153, 153, 0.8);
+    border-top: 1px solid $trans-grey;
+    border-bottom: 1px solid $trans-grey;
   }
 
   .recent ul {

@@ -15,6 +15,12 @@
   }
 }
 
+.post-text,
+.post-tags p,
+.comment-text p {
+  @include body-font();
+}
+
 .post-title {
   font-size: 2.4rem;
   padding-bottom: 8px;
@@ -29,7 +35,6 @@
 }
 
 .post-text {
-  @include body-font();
   padding: 10px 0;
 }
 
@@ -39,7 +44,7 @@
   padding: 30px 0;
 
   p {
-    @include body-font();
+    color: $light-grey;
   }
 }
 
@@ -69,15 +74,15 @@
 
 .post-footnotes {
   margin: 20px 0;
-  border-top: 1px solid rgba(153, 153, 153, 0.3);
-  border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+  border-top: 1px solid $trans-grey;
+  border-bottom: 1px solid $trans-grey;
 }
 
 .post-author {
   padding: 20px 0 40px 0;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+  border-bottom: 1px solid $trans-grey;
 }
 
 .post-author img {
@@ -87,7 +92,7 @@
 
 .post-author-text {
   width: 75%;
-  background-color: #f5f5f5;
+  background-color: #e8e8e8;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -100,7 +105,8 @@
 }
 
 .posts-related {
-  padding: 40px 0;
+  padding: 40px 0 20px 0;
+  border-bottom: 1px solid $trans-grey;
 
   h4 {
     padding-bottom: 20px;
@@ -126,4 +132,67 @@
     font-size: 1.8rem;
     padding-bottom: 5px;
   }
+}
+
+.comments {
+  margin-top: 40px;
+
+  h4 {
+    padding-bottom: 40px;
+  }
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 20px;
+
+  img {
+    margin-right: 20px;
+    object-fit: contain;
+    max-height: 75px;
+  }
+  .comment-text {
+    width: 90%;
+
+    h5,
+    p {
+      padding-bottom: 10px;
+    }
+
+    .comment-date {
+      font-family: $second-font;
+    }
+  }
+}
+
+.bubble {
+  background-color: #e8e8e8;
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+
+  h5 {
+    font-size: 1.4rem;
+    text-transform: capitalize;
+
+    span {
+      font-family: $base-font;
+      font-size: 1.3rem;
+      color: $dark-grey;
+    }
+  }
+}
+
+.bubble::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -15px;
+  top: 15px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 15px solid #e8e8e8;
 }

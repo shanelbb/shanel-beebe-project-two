@@ -11,9 +11,9 @@ $dark-grey: #333333;
 $light-grey: #999999;
 $black: #2e2e2e;
 $white: #f6f6f6;
+$trans-grey: rgba(153, 153, 153, 0.3);
 
 // mixins
-
 @mixin sb-flex() {
   display: flex;
   justify-content: space-between;
@@ -22,6 +22,6 @@ $white: #f6f6f6;
 
 @mixin body-font() {
   font-size: 1.4rem;
-  color: $light-grey;
+  color: $dark-grey;
   line-height: 22px;
 }
