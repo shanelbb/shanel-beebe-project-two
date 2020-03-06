@@ -34,6 +34,7 @@
   display: flex;
   align-items: center;
   height: 500px;
+
   article,
   figure {
     width: 50%;
@@ -52,14 +53,9 @@
     @include body-font();
     margin-bottom: 30px;
   }
+
   .btn {
     margin-top: 30px;
-    padding: 15px 30px;
-    font-family: $second-font;
-    font-size: 1.3rem;
-    background-color: $primary;
-    color: $white;
-    text-transform: uppercase;
   }
 }
 

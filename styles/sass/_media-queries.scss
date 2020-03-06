@@ -226,6 +226,14 @@
       margin-right: 0;
     }
   }
+
+  .comment-form fieldset {
+    flex-direction: column;
+    justify-content: center;
+    input {
+      width: 100%;
+    }
+  }
 }
 
 @media (max-width: 670px) {

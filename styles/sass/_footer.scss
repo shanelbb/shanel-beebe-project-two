@@ -78,20 +78,19 @@ footer section {
       }
     }
   }
-}
-
-.nav-footer-social ul {
-  display: flex;
-  li {
-    margin-right: 15px;
-    border-bottom: none;
-
-    a {
-      color: $white;
+  .nav-footer-social ul {
+    display: flex;
+    li {
+      margin-right: 15px;
       border-bottom: none;
 
-      &:hover {
-        color: $primary;
+      a {
+        color: $white;
+        border-bottom: none;
+
+        &:hover {
+          color: $primary;
+        }
       }
     }
   }
