@@ -98,11 +98,15 @@ footer section {
 
 .copyright {
   font-family: $second-font;
-  font-size: 1.3rem;
   background-color: $black;
   padding: 15px 0;
 
-  span {
-    color: $primary;
+  p {
+    font-size: 1.3rem;
+    padding: 0;
+
+    span {
+      color: $primary;
+    }
   }
 }

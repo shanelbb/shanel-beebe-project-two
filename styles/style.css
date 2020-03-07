@@ -402,6 +402,7 @@ header {
   background-size: cover;
   background-position: 50% 0;
   height: 80vh;
+  min-height: 300px;
   padding: 30px;
 }
 
@@ -593,12 +594,16 @@ footer section .nav-footer-social ul li a:hover {
 
 .copyright {
   font-family: "Raleway", sans-serif;
-  font-size: 1.3rem;
   background-color: #2e2e2e;
   padding: 15px 0;
 }
 
-.copyright span {
+.copyright p {
+  font-size: 1.3rem;
+  padding: 0;
+}
+
+.copyright p span {
   color: #64a604;
 }
 
@@ -1444,6 +1449,25 @@ footer section .nav-footer-social ul li a:hover {
   .comment-form fieldset input {
     width: 100%;
   }
+  .contact-page {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 15px;
+  }
+  .contact-page .contact-form {
+    width: 100%;
+    padding: 40px 0;
+  }
+  .contact-page .contact-details {
+    width: 100%;
+    padding: 40px 20px 20px 20px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 670px) {
@@ -1473,5 +1497,36 @@ footer section .nav-footer-social ul li a:hover {
   }
   .quote blockquote .right {
     right: -50px;
+  }
+  .contact-inputs fieldset {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-inputs fieldset input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  header .top-bar .header-logo {
+    font-size: 3rem;
+  }
+  label.toggle {
+    font-size: 2.5rem;
+  }
+  .copyright {
+    text-align: center;
+    padding: 10px 0;
+  }
+  .copyright p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .posts-related ul li h3 {
+    font-size: 1.5rem;
   }
 }
