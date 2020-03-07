@@ -392,7 +392,7 @@ img {
   transition: all 0.3s linear;
 }
 
-.btn:hover {
+.btn:hover, .btn:focus {
   background-color: #f6f6f6;
   color: #64a604;
   border: 2px solid #64a604;
@@ -463,7 +463,7 @@ ul.nav-header-list li a {
   transition: all 0.4s ease;
 }
 
-ul.nav-header-list li a:hover {
+ul.nav-header-list li a:hover, ul.nav-header-list li a:focus {
   color: #64a604;
 }
 
@@ -1063,6 +1063,7 @@ footer section .nav-footer-social ul li a:hover {
 
 .comment-info {
   font-size: 1.4rem;
+  line-height: 22px;
   color: #999999;
   font-style: italic;
   padding-bottom: 20px;
@@ -1083,6 +1084,7 @@ footer section .nav-footer-social ul li a:hover {
 }
 
 .comment-form input {
+  height: 40px;
   font-family: "Lora", serif;
   font-size: 1.4rem;
   color: #333333;
@@ -1143,23 +1145,7 @@ footer section .nav-footer-social ul li a:hover {
   width: 100%;
 }
 
-.contact-inputs fieldset {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.contact-inputs fieldset input {
-  width: calc((100% - 20px) / 2);
-  margin-bottom: 20px;
-}
-
 .contact-inputs input {
-  display: block;
-  width: 100%;
   height: 40px;
   margin-bottom: 20px;
   padding-left: 20px;
@@ -1169,6 +1155,29 @@ footer section .nav-footer-social ul li a:hover {
   font-size: 1.4rem;
   color: #333333;
   line-height: 22px;
+}
+
+.contact-inputs fieldset.half-width {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-inputs fieldset.half-width input {
+  width: calc((100% - 20px) / 2);
+  margin-bottom: 20px;
+}
+
+.contact-inputs fieldset.full-width input {
+  display: block;
+  width: 100%;
 }
 
 .contact-inputs .message {
@@ -1498,13 +1507,13 @@ footer section .nav-footer-social ul li a:hover {
   .quote blockquote .right {
     right: -50px;
   }
-  .contact-inputs fieldset {
+  .contact-inputs fieldset.half-width {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .contact-inputs fieldset input {
+  .contact-inputs fieldset.half-width input {
     width: 100%;
   }
 }
@@ -1521,6 +1530,9 @@ footer section .nav-footer-social ul li a:hover {
     padding: 10px 0;
   }
   .copyright p {
+    font-size: 1.1rem;
+  }
+  .comment .comment-text .comment-date {
     font-size: 1.1rem;
   }
 }

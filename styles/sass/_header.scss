@@ -22,6 +22,8 @@ header {
 .nav-header {
   text-align: right;
 }
+
+// hamburger menu icon and checkbox hidden until screen <940px.
 input.toggle,
 label.toggle {
   display: none;
@@ -42,11 +44,14 @@ ul.nav-header-list {
 
     a {
       transition: all 0.4s ease;
-      &:hover {
+
+      &:hover,
+      &:focus {
         color: $primary;
       }
     }
 
+    // small green circle on shopping bag icon in nav menu
     span {
       position: absolute;
       bottom: -8px;

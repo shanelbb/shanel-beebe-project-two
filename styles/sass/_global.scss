@@ -8,6 +8,7 @@ body {
   color: $black;
 }
 
+// limits the width on large resolution screens
 .large-wrapper {
   max-width: 1850px;
   margin: 0 auto;
@@ -50,7 +51,8 @@ img {
   border: 2px solid transparent;
   transition: all 0.3s linear;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $white;
     color: $primary;
     border: 2px solid $primary;
