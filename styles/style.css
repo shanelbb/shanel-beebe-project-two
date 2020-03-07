@@ -1105,6 +1105,117 @@ footer section .nav-footer-social ul li a:hover {
   color: #64a604;
 }
 
+.contact-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0 0 10%;
+}
+
+.contact-page .contact-form {
+  width: 60%;
+  margin-right: 20px;
+  padding: 10% 0;
+}
+
+.contact-page .contact-form h1 {
+  font-size: 2.4rem;
+  padding-bottom: 40px;
+}
+
+.contact-page .contact-details {
+  width: 40%;
+  background-color: #e8e8e8;
+  padding: 10% 10% 10% 20px;
+}
+
+.contact-page .contact-details h3 {
+  font-size: 2.4rem;
+  padding-bottom: 40px;
+}
+
+.contact-inputs {
+  width: 100%;
+}
+
+.contact-inputs fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-inputs fieldset input {
+  width: calc((100% - 20px) / 2);
+  margin-bottom: 20px;
+}
+
+.contact-inputs input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  border: none;
+  background-color: #e8e8e8;
+  font-family: "Lora", serif;
+  font-size: 1.4rem;
+  color: #333333;
+  line-height: 22px;
+}
+
+.contact-inputs .message {
+  padding-top: 20px;
+  padding-bottom: 250px;
+  margin-bottom: 40px;
+}
+
+.contact-inputs .submit-link {
+  color: #64a604;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  padding-right: 10px;
+  margin-top: 20px;
+}
+
+.contact-inputs i {
+  color: #64a604;
+  font-size: 2.2rem;
+}
+
+.contact-details p {
+  font-size: 1.4rem;
+  color: #333333;
+  line-height: 22px;
+}
+
+.contact-details p strong {
+  text-transform: uppercase;
+}
+
+.contact-details p:not(:nth-child(4)) {
+  padding-bottom: 20px;
+}
+
+.contact-details h5 {
+  padding: 20px 0;
+}
+
+.hours-info {
+  font-style: italic;
+}
+
+.contact-image {
+  background-image: url(../assets/contact-2.jpeg);
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
 @media (max-width: 1320px) {
   .grid-list-item i {
     font-size: 1.8rem;
