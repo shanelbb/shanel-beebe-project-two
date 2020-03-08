@@ -19,16 +19,18 @@
     <title>Delicious</title>
   </head>
   <body>
+    <!-- header starts here. large wrapper contains content to <1850px -->
     <header class="header-home large-wrapper">
       <div class="top-bar">
         <h1 class="header-logo">Delicious</h1>
 
-        <!-- navigation menu starts here -->
+        <!-- navigation menu starts -->
         <nav class="nav-header">
-          <!-- Hamburger menu and checkbox for mobile nav -->
+          <!-- Hamburger menu icon and checkbox for mobile nav -->
           <label for="toggle" class="toggle"><i class="fas fa-bars"></i></label>
           <input type="checkbox" id="toggle" class="toggle" />
 
+          <!-- navigation menu items -->
           <ul class="nav-header-list">
             <li><a href="#" class="nav-header-item home-link">Home</a></li>
             <li><a href="#" class="nav-header-item">About</a></li>
@@ -43,6 +45,7 @@
               <a href="#" class="nav-header-item nav-header-item-icon">
                 <i class="fas fa-shopping-bag"></i>
               </a>
+              <!-- circular item-counter on shopping bag icon -->
               <span>2</span>
             </li>
             <li>
@@ -52,10 +55,11 @@
             </li>
           </ul>
         </nav>
-        <!-- navigation menu ends here -->
+        <!-- navigation menu ends-->
       </div>
     </header>
 
+    <!-- main content starts -->
     <main class="large-wrapper main-home">
       <section class="grid">
         <div class="grid-top">
@@ -81,6 +85,7 @@
           <figure class="grid-bottom-img">
             <!-- background image -->
           </figure>
+
           <article class="grid-list">
             <ul class="grid-list-1">
               <li class="grid-list-item">
@@ -162,6 +167,7 @@
             src="./assets/home-4.jpeg"
             alt="Orange tables and chairs  in front of a concrete wall"
           />
+          <!-- icon placed on corner of image -->
           <img
             src="./assets/home-circle-text.png"
             alt="icon: Yumm a fancy food place"
@@ -226,10 +232,14 @@
         </div>
       </section>
     </main>
+    <!-- main content ends -->
 
+    <!-- footer starts -->
     <footer class="large-wrapper">
+      <!-- wrapper starts -->
       <div class="wrapper">
         <div class="footer-container">
+          <!-- contact info -->
           <section class="footer-contact">
             <h4>Delicious</h4>
             <p class="footer-text">
@@ -244,6 +254,7 @@
             <p class="footer-phone">+1 234 567 8910</p>
           </section>
 
+          <!-- recent articles section -->
           <section class="recent">
             <h5><a href="./blog.html" class="recent-posts">Recent Posts</a></h5>
             <ul>
@@ -256,6 +267,7 @@
             </ul>
           </section>
 
+          <!-- subscribe section -->
           <section class="subscribe">
             <h5>Subscribe Now</h5>
             <p>
@@ -273,6 +285,7 @@
               <button><i class="fas fa-long-arrow-alt-right"></i></button>
             </form>
 
+            <!-- social media icon links -->
             <nav class="nav-footer-social">
               <ul>
                 <li>
@@ -289,11 +302,15 @@
           </section>
         </div>
       </div>
+      <!-- wrapper ends -->
+
+      <!-- copyright information -->
       <section class="copyright large-wrapper">
         <p class="wrapper">
           Copyright &#169; 2015 by <span>Polar</span>. All Rights Reserved
         </p>
       </section>
     </footer>
+    <!-- footer ends -->
   </body>
 </html>

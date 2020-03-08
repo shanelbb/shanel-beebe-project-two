@@ -1,11 +1,14 @@
+// home page styles
 .header-home {
   background-image: url(../assets/home-1.jpeg);
 }
 
+// makes current page link primary color
 .home-link {
   color: $primary;
 }
 
+// partial underline on h2 headings
 .main-home h2:after {
   content: "";
   display: block;
@@ -169,7 +172,8 @@
     color: $white;
     padding: 0 15px;
 
-    &:hover {
+    &:hover,
+    &:focus {
       opacity: 0.4;
     }
   }

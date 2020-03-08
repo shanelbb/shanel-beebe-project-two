@@ -1,13 +1,18 @@
+// media queries styles
 @media (max-width: 1320px) {
+  // list on home page shrinks to fit new container size
   .grid-list-item {
     i {
       font-size: 1.8rem;
     }
+
     div {
       padding-bottom: 20px;
+
       h3 {
         font-size: 1.3rem;
       }
+
       p {
         font-size: 1.2rem;
       }
@@ -16,6 +21,7 @@
 }
 
 @media (max-width: 1150px) {
+  // navigation menu items shrink to fit in header
   .nav-header ul {
     li {
       font-size: 1.5rem;
@@ -35,10 +41,12 @@
 }
 
 @media (max-width: 1040px) {
+  // adjust padding on h2 underline
   .main-home h2:after {
     padding-top: 30px;
   }
 
+  // home page grid layout changes to column
   .grid-top,
   .grid-bottom {
     flex-direction: column;
@@ -58,8 +66,10 @@
     article.grid-list {
       width: 100%;
       padding: 40px 15px 0 15px;
+
       ul {
         padding-right: 0;
+
         li {
           width: 90%;
           margin: 0 auto;
@@ -67,17 +77,19 @@
       }
     }
 
+    // images in grid switch to full width
     figure {
       width: 100%;
     }
   }
 
+  //changes order of image and text
   .grid-bottom article {
     order: -1;
     flex-direction: column;
     height: initial;
   }
-
+  // list on home page grows to fit new container
   .grid-list-item {
     i {
       font-size: 2rem;
@@ -108,6 +120,7 @@
     }
   }
 
+  // footer switches to column view
   .footer-container {
     flex-direction: column;
     text-align: center;
@@ -131,6 +144,7 @@
     }
   }
 
+  // recent articles section collapses
   .recent {
     margin: 40px 0;
     padding-top: 40px;
@@ -153,6 +167,7 @@
 }
 
 @media (max-width: 940px) {
+  // header navigation menu switches to hamburger menu with dropdown
   header .top-bar {
     .nav-header {
       position: relative;
@@ -188,11 +203,13 @@
 }
 
 @media (max-width: 850px) {
+  //position of icon on image changes to better fit container size
   .home-aside figure .stamp {
     top: -90px;
     right: -40px;
   }
 
+  // two right hand images in gallery are hidden
   .gallery ul li:nth-child(3n) {
     display: none;
   }
@@ -201,6 +218,7 @@
     width: 50%;
   }
 
+  // blog post author and related post sections switch to column view
   .post-author {
     flex-direction: column;
   }
@@ -227,6 +245,7 @@
     }
   }
 
+  // inputs on form switch to column view
   .comment-form div {
     flex-direction: column;
     justify-content: center;
@@ -254,6 +273,7 @@
 }
 
 @media (max-width: 670px) {
+  // header bar content shrinks
   header {
     padding: 15px;
     .top-bar .header-logo {
@@ -267,12 +287,14 @@
 }
 
 @media (max-width: 550px) {
+  // icon on image shrinks to fit new container
   .home-aside figure .stamp {
     width: 150px;
     top: -65px;
     right: -20px;
   }
 
+  // quotation marks shrink and move closer to quote
   .quote blockquote {
     .left,
     .right {
@@ -286,6 +308,7 @@
     }
   }
 
+  // inputs on form switch to column view
   .contact-inputs {
     div.half-width {
       flex-direction: column;
@@ -298,6 +321,7 @@
 }
 
 @media (max-width: 420px) {
+  // header bar content shrinks
   header .top-bar .header-logo {
     font-size: 3rem;
   }
@@ -306,6 +330,7 @@
     font-size: 2.5rem;
   }
 
+  // copyright info switches to center and shrinks
   .copyright {
     text-align: center;
     padding: 10px 0;

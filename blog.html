@@ -18,17 +18,18 @@
     <title>Blog</title>
   </head>
   <body>
+    <!-- header starts here. large wrapper contains content to <1850px -->
     <header class="header-blog large-wrapper">
       <div class="top-bar">
         <h2 class="header-logo">Delicious</h2>
 
         <!-- navigation menu starts here -->
         <nav class="nav-header">
-          <!-- <div class="nav-menu-icon"> -->
+          <!-- Hamburger menu icon and checkbox for mobile nav -->
           <label for="toggle" class="toggle"><i class="fas fa-bars"></i></label>
           <input type="checkbox" id="toggle" class="toggle" />
-          <!-- </div> -->
 
+          <!-- navigation menu items -->
           <ul class="nav-header-list">
             <li><a href="./index.html" class="nav-header-item">Home</a></li>
             <li><a href="#" class="nav-header-item">About</a></li>
@@ -43,6 +44,7 @@
               <a href="#" class="nav-header-item nav-header-item-icon">
                 <i class="fas fa-shopping-bag"></i>
               </a>
+              <!-- circular item-counter on shopping bag icon -->
               <span>2</span>
             </li>
             <li>
@@ -52,11 +54,13 @@
             </li>
           </ul>
         </nav>
-        <!-- navigation menu ends here -->
+        <!-- navigation menu ends -->
       </div>
     </header>
 
+    <!-- main content and wrapper starts -->
     <main class="wrapper main-blog">
+      <!-- featured blog section starts -->
       <section class="blog-featured">
         <article class="blog-post">
           <h1 class="post-title">Pineapple Chicken</h1>
@@ -107,6 +111,8 @@
               <h4>Tags:</h4>
               <p>Recipes, Chicken, Pineapple, Mexican</p>
             </div>
+
+            <!-- social media icons for sharing post -->
             <nav class="post-share">
               <h4>Share:</h4>
               <ul>
@@ -123,6 +129,7 @@
             </nav>
           </div>
         </article>
+
         <aside class="post-author">
           <img
             src="./assets/blog-2.jpeg"
@@ -143,7 +150,9 @@
           </div>
         </aside>
       </section>
+      <!-- featured blog sections ends -->
 
+      <!-- related posts section starts -->
       <section class="posts-related">
         <h4>Related Posts</h4>
         <ul class="blog-gallery">
@@ -176,7 +185,9 @@
           </li>
         </ul>
       </section>
+      <!-- related posts section ends -->
 
+      <!-- comments section starts -->
       <section class="comments">
         <h4>02 Comments</h4>
 
@@ -240,11 +251,16 @@
           <button type="submit" class="btn">Submit Comment</button>
         </form>
       </section>
+      <!-- comments section ends -->
     </main>
+    <!-- main content ends -->
 
+    <!-- footer starts -->
     <footer class="large-wrapper">
+      <!-- wrapper starts -->
       <div class="wrapper">
         <div class="footer-container">
+          <!-- contact info -->
           <section class="footer-contact">
             <h4>Delicious</h4>
             <p class="footer-text">
@@ -259,6 +275,7 @@
             <p class="footer-phone">+1 234 567 8910</p>
           </section>
 
+          <!-- recent articles section -->
           <section class="recent">
             <h5><a href="./blog.html" class="recent-posts">Recent Posts</a></h5>
             <ul>
@@ -271,6 +288,7 @@
             </ul>
           </section>
 
+          <!-- subscribe section -->
           <section class="subscribe">
             <h5>Subscribe Now</h5>
             <p>
@@ -288,6 +306,7 @@
               <button><i class="fas fa-long-arrow-alt-right"></i></button>
             </form>
 
+            <!-- social media icon links -->
             <nav class="nav-footer-social">
               <ul>
                 <li>
@@ -304,11 +323,15 @@
           </section>
         </div>
       </div>
+      <!-- wrapper ends -->
+
+      <!-- copyright information -->
       <section class="copyright large-wrapper">
         <p class="wrapper">
           Copyright &#169; 2015 by <span>Polar</span>. All Rights Reserved
         </p>
       </section>
     </footer>
+    <!-- footer ends -->
   </body>
 </html>

@@ -18,17 +18,18 @@
     <title>Contact</title>
   </head>
   <body>
+    <!-- header starts here. large wrapper contains content to <1850px -->
     <header class="header-contact large-wrapper">
       <div class="top-bar">
         <h2 class="header-logo">Delicious</h2>
 
         <!-- navigation menu starts here -->
         <nav class="nav-header">
-          <!-- <div class="nav-menu-icon"> -->
+          <!-- Hamburger menu icon and checkbox for mobile nav -->
           <label for="toggle" class="toggle"><i class="fas fa-bars"></i></label>
           <input type="checkbox" id="toggle" class="toggle" />
-          <!-- </div> -->
 
+          <!-- navigation menu items -->
           <ul class="nav-header-list">
             <li><a href="./index.html" class="nav-header-item">Home</a></li>
             <li><a href="#" class="nav-header-item">About</a></li>
@@ -43,6 +44,7 @@
               <a href="#" class="nav-header-item nav-header-item-icon">
                 <i class="fas fa-shopping-bag"></i>
               </a>
+              <!-- circular item-counter on shopping bag icon -->
               <span>2</span>
             </li>
             <li>
@@ -56,8 +58,10 @@
       </div>
     </header>
 
+    <!-- main content starts -->
     <main>
       <div class="contact-page">
+        <!-- contact form and wrapper starts -->
         <section class="contact-form wrapper">
           <h1>Drop Us a Line</h1>
           <form action="#" class="contact-inputs">
@@ -67,6 +71,7 @@
               <label for="email" class="visuallyHidden">Your Email</label>
               <input type="text" placeholder="Your Email" id="email" />
             </div>
+
             <div class="full-width">
               <label for="subject" class="visuallyHidden">Subject</label>
               <input type="text" placeholder="Subject" id="subject" />
@@ -78,6 +83,7 @@
                 class="message"
               />
             </div>
+
             <a href="#" class="submit-link">
               Send Message
             </a>
@@ -85,6 +91,7 @@
           </form>
         </section>
 
+        <!-- contact details section -->
         <section class="contact-details">
           <h3>Contact Details</h3>
           <p>
@@ -112,9 +119,12 @@
       </figure>
     </main>
 
+    <!-- footer starts -->
     <footer class="large-wrapper">
+      <!-- wrapper starts -->
       <div class="wrapper">
         <div class="footer-container">
+          <!-- contact info -->
           <section class="footer-contact">
             <h4>Delicious</h4>
             <p class="footer-text">
@@ -129,6 +139,7 @@
             <p class="footer-phone">+1 234 567 8910</p>
           </section>
 
+          <!-- recent articles section -->
           <section class="recent">
             <h5><a href="./blog.html" class="recent-posts">Recent Posts</a></h5>
             <ul>
@@ -141,6 +152,7 @@
             </ul>
           </section>
 
+          <!-- subscribe section -->
           <section class="subscribe">
             <h5>Subscribe Now</h5>
             <p>
@@ -158,6 +170,7 @@
               <button><i class="fas fa-long-arrow-alt-right"></i></button>
             </form>
 
+            <!-- social media icon links -->
             <nav class="nav-footer-social">
               <ul>
                 <li>
@@ -174,11 +187,15 @@
           </section>
         </div>
       </div>
+      <!-- wrapper ends -->
+
+      <!-- copyright information -->
       <section class="copyright large-wrapper">
         <p class="wrapper">
           Copyright &#169; 2015 by <span>Polar</span>. All Rights Reserved
         </p>
       </section>
     </footer>
+    <!-- footer ends -->
   </body>
 </html>

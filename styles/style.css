@@ -526,7 +526,7 @@ footer section a {
   transition: all 0.5s;
 }
 
-footer section a:hover {
+footer section a:hover, footer section a:focus {
   color: #64a604;
 }
 
@@ -567,7 +567,7 @@ footer section form button {
   transition: all 0.5s;
 }
 
-footer section form button:hover {
+footer section form button:hover, footer section form button:focus {
   background-color: #f6f6f6;
   color: #64a604;
 }
@@ -588,7 +588,7 @@ footer section .nav-footer-social ul li a {
   border-bottom: none;
 }
 
-footer section .nav-footer-social ul li a:hover {
+footer section .nav-footer-social ul li a:hover, footer section .nav-footer-social ul li a:focus {
   color: #64a604;
 }
 
@@ -814,7 +814,7 @@ footer section .nav-footer-social ul li a:hover {
   padding: 0 15px;
 }
 
-.quote .arrows a:hover {
+.quote .arrows a:hover, .quote .arrows a:focus {
   opacity: 0.4;
 }
 
@@ -902,7 +902,7 @@ footer section .nav-footer-social ul li a:hover {
   color: #999999;
 }
 
-.post-share ul li a:hover {
+.post-share ul li a:hover, .post-share ul li a:focus {
   color: #333333;
 }
 
@@ -1038,10 +1038,6 @@ footer section .nav-footer-social ul li a:hover {
   font-family: "Lora", serif;
   font-size: 1.3rem;
   color: #333333;
-}
-
-.bubble h4.leave {
-  padding: 20px 0;
 }
 
 .bubble::after {

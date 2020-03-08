@@ -1,7 +1,10 @@
+// blog page styles
+
 .header-blog {
   background-image: url(../assets/blog-1.jpeg);
 }
 
+// makes current page link primary color
 .blog-link {
   color: $primary;
 }
@@ -64,7 +67,8 @@
       a {
         color: $light-grey;
 
-        &:hover {
+        &:hover,
+        &:focus {
           color: $dark-grey;
         }
       }
@@ -162,6 +166,7 @@
   }
 }
 
+// comment section speech bubble styles
 .bubble {
   background-color: #e8e8e8;
   border-radius: 2px;
@@ -178,12 +183,9 @@
       color: $dark-grey;
     }
   }
-
-  h4.leave {
-    padding: 20px 0;
-  }
 }
 
+// create triangles on speech bubbles in comment section
 .bubble::after {
   content: "";
   display: block;
@@ -209,6 +211,7 @@
   padding-bottom: 20px;
 }
 
+// displays user info inputs side by side
 .comment-form div {
   display: flex;
   justify-content: space-between;
