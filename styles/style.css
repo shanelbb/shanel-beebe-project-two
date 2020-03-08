@@ -1069,7 +1069,7 @@ footer section .nav-footer-social ul li a:hover {
   padding-bottom: 20px;
 }
 
-.comment-form fieldset {
+.comment-form div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1078,7 +1078,7 @@ footer section .nav-footer-social ul li a:hover {
           justify-content: space-between;
 }
 
-.comment-form fieldset input {
+.comment-form div input {
   width: calc((100% - 40px) / 3);
   margin-bottom: 10px;
 }
@@ -1157,7 +1157,7 @@ footer section .nav-footer-social ul li a:hover {
   line-height: 22px;
 }
 
-.contact-inputs fieldset.half-width {
+.contact-inputs div.half-width {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1170,12 +1170,12 @@ footer section .nav-footer-social ul li a:hover {
           justify-content: space-between;
 }
 
-.contact-inputs fieldset.half-width input {
+.contact-inputs div.half-width input {
   width: calc((100% - 20px) / 2);
   margin-bottom: 20px;
 }
 
-.contact-inputs fieldset.full-width input {
+.contact-inputs div.full-width input {
   display: block;
   width: 100%;
 }
@@ -1446,7 +1446,7 @@ footer section .nav-footer-social ul li a:hover {
   .posts-related ul li:not(:last-of-type) {
     margin-right: 0;
   }
-  .comment-form fieldset {
+  .comment-form div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1455,7 +1455,7 @@ footer section .nav-footer-social ul li a:hover {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .comment-form fieldset input {
+  .comment-form div input {
     width: 100%;
   }
   .contact-page {
@@ -1507,13 +1507,13 @@ footer section .nav-footer-social ul li a:hover {
   .quote blockquote .right {
     right: -50px;
   }
-  .contact-inputs fieldset.half-width {
+  .contact-inputs div.half-width {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .contact-inputs fieldset.half-width input {
+  .contact-inputs div.half-width input {
     width: 100%;
   }
 }

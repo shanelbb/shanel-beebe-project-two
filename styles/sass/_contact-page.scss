@@ -46,7 +46,7 @@
     @include body-font();
   }
 
-  fieldset.half-width {
+  div.half-width {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -57,7 +57,7 @@
     }
   }
 
-  fieldset.full-width input {
+  div.full-width input {
     display: block;
     width: 100%;
   }

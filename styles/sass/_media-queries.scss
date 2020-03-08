@@ -227,7 +227,7 @@
     }
   }
 
-  .comment-form fieldset {
+  .comment-form div {
     flex-direction: column;
     justify-content: center;
     input {
@@ -287,7 +287,7 @@
   }
 
   .contact-inputs {
-    fieldset.half-width {
+    div.half-width {
       flex-direction: column;
 
       input {
