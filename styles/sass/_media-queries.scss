@@ -1,4 +1,16 @@
 // media queries styles
+
+@media (min-width: 2700px) {
+  // adjusts layout of form on high resolution screens
+  .contact-page {
+    padding: 0 0 0 5%;
+
+    .contact-form {
+      margin-right: 40px;
+    }
+  }
+}
+
 @media (max-width: 1320px) {
   // list on home page shrinks to fit new container size
   .grid-list-item {
